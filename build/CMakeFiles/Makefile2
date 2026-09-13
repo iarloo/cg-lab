@@ -88,12 +88,12 @@ clean: CMakeFiles/teste.dir/clean
 CMakeFiles/programa.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target programa"
 .PHONY : CMakeFiles/programa.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/programa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/programa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles 0
 .PHONY : CMakeFiles/programa.dir/rule
@@ -105,7 +105,7 @@ programa: CMakeFiles/programa.dir/rule
 # codegen rule for target.
 CMakeFiles/programa.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target programa"
 .PHONY : CMakeFiles/programa.dir/codegen
 
 # clean rule for target.
@@ -120,7 +120,7 @@ CMakeFiles/programa.dir/clean:
 CMakeFiles/teste.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=7,8 "Built target teste"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=9,10 "Built target teste"
 .PHONY : CMakeFiles/teste.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +137,7 @@ teste: CMakeFiles/teste.dir/rule
 # codegen rule for target.
 CMakeFiles/teste.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=7,8 "Finished codegen for target teste"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=9,10 "Finished codegen for target teste"
 .PHONY : CMakeFiles/teste.dir/codegen
 
 # clean rule for target.

@@ -1,6 +1,7 @@
-CMakeFiles/programa.dir/main.c.o: \
- /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/main.c \
+CMakeFiles/programa.dir/menu.c.o: \
+ /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.c \
  /usr/include/stdc-predef.h \
+ /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.h \
  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/desenhos.h \
  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/constantes.c \
  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.h \
@@ -36,9 +37,6 @@ CMakeFiles/programa.dir/main.c.o: \
  /usr/include/GL/glu.h /usr/include/GL/glut.h \
  /usr/include/GL/freeglut_std.h \
  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/globals.h \
- /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/janela.h \
- /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.h \
- /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/mouse.h \
  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes.h \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -46,4 +44,4 @@ CMakeFiles/programa.dir/main.c.o: \
  /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/GL/freeglut_std.h
+ /usr/include/bits/iscanonical.h

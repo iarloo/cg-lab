@@ -72,24 +72,10 @@ include CMakeFiles/programa.dir/flags.make
 CMakeFiles/programa.dir/codegen:
 .PHONY : CMakeFiles/programa.dir/codegen
 
-CMakeFiles/programa.dir/constantes.c.o: CMakeFiles/programa.dir/flags.make
-CMakeFiles/programa.dir/constantes.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/constantes.c
-CMakeFiles/programa.dir/constantes.c.o: CMakeFiles/programa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/programa.dir/constantes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/constantes.c.o -MF CMakeFiles/programa.dir/constantes.c.o.d -o CMakeFiles/programa.dir/constantes.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/constantes.c
-
-CMakeFiles/programa.dir/constantes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/programa.dir/constantes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/constantes.c > CMakeFiles/programa.dir/constantes.c.i
-
-CMakeFiles/programa.dir/constantes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/constantes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/constantes.c -o CMakeFiles/programa.dir/constantes.c.s
-
 CMakeFiles/programa.dir/main.c.o: CMakeFiles/programa.dir/flags.make
 CMakeFiles/programa.dir/main.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/main.c
 CMakeFiles/programa.dir/main.c.o: CMakeFiles/programa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/programa.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/programa.dir/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/main.c.o -MF CMakeFiles/programa.dir/main.c.o.d -o CMakeFiles/programa.dir/main.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/main.c
 
 CMakeFiles/programa.dir/main.c.i: cmake_force
@@ -100,24 +86,52 @@ CMakeFiles/programa.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/main.c -o CMakeFiles/programa.dir/main.c.s
 
-CMakeFiles/programa.dir/vertices.c.o: CMakeFiles/programa.dir/flags.make
-CMakeFiles/programa.dir/vertices.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c
-CMakeFiles/programa.dir/vertices.c.o: CMakeFiles/programa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/programa.dir/vertices.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/vertices.c.o -MF CMakeFiles/programa.dir/vertices.c.o.d -o CMakeFiles/programa.dir/vertices.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c
+CMakeFiles/programa.dir/mouse.c.o: CMakeFiles/programa.dir/flags.make
+CMakeFiles/programa.dir/mouse.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/mouse.c
+CMakeFiles/programa.dir/mouse.c.o: CMakeFiles/programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/programa.dir/mouse.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/mouse.c.o -MF CMakeFiles/programa.dir/mouse.c.o.d -o CMakeFiles/programa.dir/mouse.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/mouse.c
 
-CMakeFiles/programa.dir/vertices.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/programa.dir/vertices.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c > CMakeFiles/programa.dir/vertices.c.i
+CMakeFiles/programa.dir/mouse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/programa.dir/mouse.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/mouse.c > CMakeFiles/programa.dir/mouse.c.i
 
-CMakeFiles/programa.dir/vertices.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/vertices.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c -o CMakeFiles/programa.dir/vertices.c.s
+CMakeFiles/programa.dir/mouse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/mouse.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/mouse.c -o CMakeFiles/programa.dir/mouse.c.s
+
+CMakeFiles/programa.dir/menu.c.o: CMakeFiles/programa.dir/flags.make
+CMakeFiles/programa.dir/menu.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.c
+CMakeFiles/programa.dir/menu.c.o: CMakeFiles/programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/programa.dir/menu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/menu.c.o -MF CMakeFiles/programa.dir/menu.c.o.d -o CMakeFiles/programa.dir/menu.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.c
+
+CMakeFiles/programa.dir/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/programa.dir/menu.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.c > CMakeFiles/programa.dir/menu.c.i
+
+CMakeFiles/programa.dir/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/menu.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/menu.c -o CMakeFiles/programa.dir/menu.c.s
+
+CMakeFiles/programa.dir/janela.c.o: CMakeFiles/programa.dir/flags.make
+CMakeFiles/programa.dir/janela.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/janela.c
+CMakeFiles/programa.dir/janela.c.o: CMakeFiles/programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/programa.dir/janela.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/janela.c.o -MF CMakeFiles/programa.dir/janela.c.o.d -o CMakeFiles/programa.dir/janela.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/janela.c
+
+CMakeFiles/programa.dir/janela.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/programa.dir/janela.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/janela.c > CMakeFiles/programa.dir/janela.c.i
+
+CMakeFiles/programa.dir/janela.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/janela.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/janela.c -o CMakeFiles/programa.dir/janela.c.s
 
 CMakeFiles/programa.dir/desenhos.c.o: CMakeFiles/programa.dir/flags.make
 CMakeFiles/programa.dir/desenhos.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/desenhos.c
 CMakeFiles/programa.dir/desenhos.c.o: CMakeFiles/programa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/programa.dir/desenhos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/programa.dir/desenhos.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/desenhos.c.o -MF CMakeFiles/programa.dir/desenhos.c.o.d -o CMakeFiles/programa.dir/desenhos.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/desenhos.c
 
 CMakeFiles/programa.dir/desenhos.c.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/programa.dir/desenhos.c.s: cmake_force
 CMakeFiles/programa.dir/transformacoes.c.o: CMakeFiles/programa.dir/flags.make
 CMakeFiles/programa.dir/transformacoes.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes.c
 CMakeFiles/programa.dir/transformacoes.c.o: CMakeFiles/programa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/programa.dir/transformacoes.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/programa.dir/transformacoes.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/transformacoes.c.o -MF CMakeFiles/programa.dir/transformacoes.c.o.d -o CMakeFiles/programa.dir/transformacoes.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes.c
 
 CMakeFiles/programa.dir/transformacoes.c.i: cmake_force
@@ -142,22 +156,40 @@ CMakeFiles/programa.dir/transformacoes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/transformacoes.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes.c -o CMakeFiles/programa.dir/transformacoes.c.s
 
+CMakeFiles/programa.dir/vertices.c.o: CMakeFiles/programa.dir/flags.make
+CMakeFiles/programa.dir/vertices.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c
+CMakeFiles/programa.dir/vertices.c.o: CMakeFiles/programa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/programa.dir/vertices.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/programa.dir/vertices.c.o -MF CMakeFiles/programa.dir/vertices.c.o.d -o CMakeFiles/programa.dir/vertices.c.o -c /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c
+
+CMakeFiles/programa.dir/vertices.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/programa.dir/vertices.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c > CMakeFiles/programa.dir/vertices.c.i
+
+CMakeFiles/programa.dir/vertices.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/programa.dir/vertices.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/vertices.c -o CMakeFiles/programa.dir/vertices.c.s
+
 # Object files for target programa
 programa_OBJECTS = \
-"CMakeFiles/programa.dir/constantes.c.o" \
 "CMakeFiles/programa.dir/main.c.o" \
-"CMakeFiles/programa.dir/vertices.c.o" \
+"CMakeFiles/programa.dir/mouse.c.o" \
+"CMakeFiles/programa.dir/menu.c.o" \
+"CMakeFiles/programa.dir/janela.c.o" \
 "CMakeFiles/programa.dir/desenhos.c.o" \
-"CMakeFiles/programa.dir/transformacoes.c.o"
+"CMakeFiles/programa.dir/transformacoes.c.o" \
+"CMakeFiles/programa.dir/vertices.c.o"
 
 # External object files for target programa
 programa_EXTERNAL_OBJECTS =
 
-programa: CMakeFiles/programa.dir/constantes.c.o
 programa: CMakeFiles/programa.dir/main.c.o
-programa: CMakeFiles/programa.dir/vertices.c.o
+programa: CMakeFiles/programa.dir/mouse.c.o
+programa: CMakeFiles/programa.dir/menu.c.o
+programa: CMakeFiles/programa.dir/janela.c.o
 programa: CMakeFiles/programa.dir/desenhos.c.o
 programa: CMakeFiles/programa.dir/transformacoes.c.o
+programa: CMakeFiles/programa.dir/vertices.c.o
 programa: CMakeFiles/programa.dir/build.make
 programa: CMakeFiles/programa.dir/compiler_depend.ts
 programa: /usr/lib64/libglut.so
@@ -165,7 +197,7 @@ programa: /usr/lib64/libGLU.so
 programa: /usr/lib64/libGLX.so
 programa: /usr/lib64/libOpenGL.so
 programa: CMakeFiles/programa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable programa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable programa"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/programa.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

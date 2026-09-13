@@ -166,30 +166,6 @@ basicGlutGlCurvaFechadaTransformaTrab2026.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/basicGlutGlCurvaFechadaTransformaTrab2026.c.s
 .PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.c.s
 
-constantes.o: constantes.c.o
-.PHONY : constantes.o
-
-# target to build an object file
-constantes.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/constantes.c.o
-.PHONY : constantes.c.o
-
-constantes.i: constantes.c.i
-.PHONY : constantes.i
-
-# target to preprocess a source file
-constantes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/constantes.c.i
-.PHONY : constantes.c.i
-
-constantes.s: constantes.c.s
-.PHONY : constantes.s
-
-# target to generate assembly for a file
-constantes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/constantes.c.s
-.PHONY : constantes.c.s
-
 desenhos.o: desenhos.c.o
 .PHONY : desenhos.o
 
@@ -214,6 +190,30 @@ desenhos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/desenhos.c.s
 .PHONY : desenhos.c.s
 
+janela.o: janela.c.o
+.PHONY : janela.o
+
+# target to build an object file
+janela.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/janela.c.o
+.PHONY : janela.c.o
+
+janela.i: janela.c.i
+.PHONY : janela.i
+
+# target to preprocess a source file
+janela.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/janela.c.i
+.PHONY : janela.c.i
+
+janela.s: janela.c.s
+.PHONY : janela.s
+
+# target to generate assembly for a file
+janela.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/janela.c.s
+.PHONY : janela.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -237,6 +237,54 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/main.c.s
 .PHONY : main.c.s
+
+menu.o: menu.c.o
+.PHONY : menu.o
+
+# target to build an object file
+menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/menu.c.o
+.PHONY : menu.c.o
+
+menu.i: menu.c.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/menu.c.i
+.PHONY : menu.c.i
+
+menu.s: menu.c.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/menu.c.s
+.PHONY : menu.c.s
+
+mouse.o: mouse.c.o
+.PHONY : mouse.o
+
+# target to build an object file
+mouse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mouse.c.o
+.PHONY : mouse.c.o
+
+mouse.i: mouse.c.i
+.PHONY : mouse.i
+
+# target to preprocess a source file
+mouse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mouse.c.i
+.PHONY : mouse.c.i
+
+mouse.s: mouse.c.s
+.PHONY : mouse.s
+
+# target to generate assembly for a file
+mouse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mouse.c.s
+.PHONY : mouse.c.s
 
 transformacoes.o: transformacoes.c.o
 .PHONY : transformacoes.o
@@ -299,15 +347,21 @@ help:
 	@echo "... basicGlutGlCurvaFechadaTransformaTrab2026.o"
 	@echo "... basicGlutGlCurvaFechadaTransformaTrab2026.i"
 	@echo "... basicGlutGlCurvaFechadaTransformaTrab2026.s"
-	@echo "... constantes.o"
-	@echo "... constantes.i"
-	@echo "... constantes.s"
 	@echo "... desenhos.o"
 	@echo "... desenhos.i"
 	@echo "... desenhos.s"
+	@echo "... janela.o"
+	@echo "... janela.i"
+	@echo "... janela.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
+	@echo "... mouse.o"
+	@echo "... mouse.i"
+	@echo "... mouse.s"
 	@echo "... transformacoes.o"
 	@echo "... transformacoes.i"
 	@echo "... transformacoes.s"

@@ -2,11 +2,13 @@ programa: \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o \
-  CMakeFiles/programa.dir/constantes.c.o \
   CMakeFiles/programa.dir/main.c.o \
-  CMakeFiles/programa.dir/vertices.c.o \
+  CMakeFiles/programa.dir/mouse.c.o \
+  CMakeFiles/programa.dir/menu.c.o \
+  CMakeFiles/programa.dir/janela.c.o \
   CMakeFiles/programa.dir/desenhos.c.o \
   CMakeFiles/programa.dir/transformacoes.c.o \
+  CMakeFiles/programa.dir/vertices.c.o \
   /usr/lib64/libglut.so \
   /usr/lib64/libGLU.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
@@ -65,15 +67,19 @@ programa: \
 
 /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o:
 
-CMakeFiles/programa.dir/constantes.c.o:
-
 CMakeFiles/programa.dir/main.c.o:
 
-CMakeFiles/programa.dir/vertices.c.o:
+CMakeFiles/programa.dir/mouse.c.o:
+
+CMakeFiles/programa.dir/menu.c.o:
+
+CMakeFiles/programa.dir/janela.c.o:
 
 CMakeFiles/programa.dir/desenhos.c.o:
 
 CMakeFiles/programa.dir/transformacoes.c.o:
+
+CMakeFiles/programa.dir/vertices.c.o:
 
 /usr/lib64/libglut.so:
 

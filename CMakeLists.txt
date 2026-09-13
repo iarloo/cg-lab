@@ -9,14 +9,20 @@ find_package(GLUT REQUIRED)
 
 add_executable(
   programa
-  constantes.c
   main.c
-  vertices.c
-  vertices.h
-  desenhos.h
+  mouse.c
+  menu.c
+  janela.c
   desenhos.c
   transformacoes.c
-  transformacoes.h)
+  vertices.c
+  globals.h
+  mouse.h
+  menu.h
+  janela.h
+  desenhos.h
+  transformacoes.h
+  vertices.h)
 add_executable(teste basicGlutGlCurvaFechadaTransformaTrab2026.c)
 
 target_link_libraries(programa PRIVATE GLUT::GLUT OpenGL::GLU OpenGL::GL m)
