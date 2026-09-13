@@ -5,7 +5,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
     description: "Path to a program."
@@ -20,18 +20,21 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/uname"
       - "/home/iarlohenrique/.local/bin/uname"
       - "/home/iarlohenrique/bin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -41,14 +44,14 @@ events:
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Linux - 7.2.4-200.fc44.x86_64 - x86_64
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Path to a program."
@@ -65,18 +68,21 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gmake"
       - "/home/iarlohenrique/.local/bin/gmake"
       - "/home/iarlohenrique/bin/gmake"
       - "/usr/local/bin/gmake"
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -87,7 +93,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
     description: "C compiler"
@@ -108,18 +114,21 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/cc"
       - "/home/iarlohenrique/.local/bin/cc"
       - "/home/iarlohenrique/bin/cc"
       - "/usr/local/bin/cc"
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -133,7 +142,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -152,6 +161,7 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -163,7 +173,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /usr/bin/cc 
@@ -184,7 +194,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -200,6 +210,7 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -207,6 +218,7 @@ events:
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -217,7 +229,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -233,6 +245,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -240,6 +253,7 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -250,7 +264,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -266,6 +280,7 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -273,6 +288,7 @@ events:
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -283,7 +299,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -299,6 +315,7 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -306,6 +323,7 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -316,7 +334,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -332,6 +350,7 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -339,6 +358,7 @@ events:
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -349,7 +369,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -365,6 +385,7 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -372,6 +393,7 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -382,7 +404,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -398,6 +420,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -405,6 +428,7 @@ events:
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -415,7 +439,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -431,6 +455,7 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -438,6 +463,7 @@ events:
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -448,7 +474,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -464,12 +490,14 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/dlltool"
       - "/home/iarlohenrique/.local/bin/dlltool"
       - "/home/iarlohenrique/bin/dlltool"
       - "/usr/local/bin/dlltool"
@@ -477,6 +505,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -487,7 +516,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -503,6 +532,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -510,6 +540,7 @@ events:
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -520,7 +551,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -536,12 +567,14 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/tapi"
       - "/home/iarlohenrique/.local/bin/tapi"
       - "/home/iarlohenrique/bin/tapi"
       - "/usr/local/bin/tapi"
@@ -549,6 +582,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -559,7 +593,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -578,22 +612,26 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-16.2"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gcc-ar-16.2"
       - "/home/iarlohenrique/.local/bin/gcc-ar-16.2"
       - "/home/iarlohenrique/bin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
       - "/bin/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gcc-ar-16"
       - "/home/iarlohenrique/.local/bin/gcc-ar-16"
       - "/home/iarlohenrique/bin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
       - "/bin/gcc-ar-16"
       - "/usr/bin/gcc-ar16"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gcc-ar16"
       - "/home/iarlohenrique/.local/bin/gcc-ar16"
       - "/home/iarlohenrique/bin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
@@ -601,6 +639,7 @@ events:
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -611,7 +650,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -630,22 +669,26 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
       - "/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gcc-ranlib-16.2"
       - "/home/iarlohenrique/.local/bin/gcc-ranlib-16.2"
       - "/home/iarlohenrique/bin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
       - "/bin/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gcc-ranlib-16"
       - "/home/iarlohenrique/.local/bin/gcc-ranlib-16"
       - "/home/iarlohenrique/bin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
       - "/bin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib16"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/gcc-ranlib16"
       - "/home/iarlohenrique/.local/bin/gcc-ranlib16"
       - "/home/iarlohenrique/bin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
@@ -653,6 +696,7 @@ events:
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -663,12 +707,12 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr"
-      binary: "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr"
+      source: "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm"
+      binary: "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -677,13 +721,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr'
+        Change Dir: '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_696b3/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_696b3.dir/build.make CMakeFiles/cmTC_696b3.dir/build
-        gmake[1]: Entering directory '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr'
-        Building C object CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eecf6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eecf6.dir/build.make CMakeFiles/cmTC_eecf6.dir/build
+        gmake[1]: Entering directory '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm'
+        Building C object CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -693,8 +737,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260819 (Red Hat 16.2.1-2) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_696b3.dir/'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_696b3.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccxln37k.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_eecf6.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_eecf6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/cc3EC7v1.s
         GNU C23 (GCC) version 16.2.1 20260819 (Red Hat 16.2.1-2) (x86_64-redhat-linux)
         	compiled by GNU C version 16.2.1 20260819 (Red Hat 16.2.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.24-GMP
         
@@ -708,14 +752,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 9bab69ee039b57e5d63c6dcf5d331ec2
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_696b3.dir/'
-         as -v --64 -o CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o /tmp/ccxln37k.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_eecf6.dir/'
+         as -v --64 -o CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o /tmp/cc3EC7v1.s
         GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_696b3
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_696b3.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_eecf6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eecf6.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper
@@ -728,14 +772,14 @@ events:
         gcc version 16.2.1 20260819 (Red Hat 16.2.1-2) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_696b3' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_696b3.'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cck6hRsD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_696b3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eecf6' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_eecf6.'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRDhoCI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eecf6 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         collect2 version 16.2.1 20260819 (Red Hat 16.2.1-2)
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cck6hRsD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_696b3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRDhoCI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eecf6 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         GNU ld version 2.46.1-1.fc44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_696b3' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_696b3.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -o cmTC_696b3
-        gmake[1]: Leaving directory '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eecf6' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_eecf6.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -o cmTC_eecf6
+        gmake[1]: Leaving directory '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm'
         
       exitCode: 0
   -
@@ -743,7 +787,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -763,18 +807,18 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr']
+        ignore line: [Change Dir: '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_696b3/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_696b3.dir/build.make CMakeFiles/cmTC_696b3.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-qySOyr']
-        ignore line: [Building C object CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eecf6/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_eecf6.dir/build.make CMakeFiles/cmTC_eecf6.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles/CMakeScratch/TryCompile-pSVKfm']
+        ignore line: [Building C object CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -784,8 +828,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260819 (Red Hat 16.2.1-2) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_696b3.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_696b3.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccxln37k.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_eecf6.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_eecf6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/cc3EC7v1.s]
         ignore line: [GNU C23 (GCC) version 16.2.1 20260819 (Red Hat 16.2.1-2) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 16.2.1 20260819 (Red Hat 16.2.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -799,14 +843,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 9bab69ee039b57e5d63c6dcf5d331ec2]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_696b3.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o /tmp/ccxln37k.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_eecf6.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o /tmp/cc3EC7v1.s]
         ignore line: [GNU assembler version 2.46.1 (x86_64-redhat-linux) using BFD version version 2.46.1-1.fc44]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_696b3]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_696b3.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_eecf6]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eecf6.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper]
@@ -819,13 +863,13 @@ events:
         ignore line: [gcc version 16.2.1 20260819 (Red Hat 16.2.1-2) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_696b3' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_696b3.']
-        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cck6hRsD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_696b3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_eecf6' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_eecf6.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRDhoCI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eecf6 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cck6hRsD.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRDhoCI.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -841,7 +885,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_696b3] ==> ignore
+          arg [cmTC_eecf6] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o]
@@ -853,7 +897,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
           arg [-latomic_asneeded] ==> lib [atomic_asneeded]
@@ -863,7 +907,7 @@ events:
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         ignore line: [collect2 version 16.2.1 20260819 (Red Hat 16.2.1-2)]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cck6hRsD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_696b3 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_696b3.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRDhoCI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eecf6 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_eecf6.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
@@ -887,7 +931,7 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Running the C compiler's linker: "/usr/bin/ld" "-v"
       GNU ld version 2.46.1-1.fc44
@@ -895,7 +939,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:408 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_INCLUDE_DIR"
     description: "Path to a file."
@@ -910,6 +954,7 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -931,6 +976,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/GL/gl.h"
       - "/home/iarlohenrique/.local/bin/GL/gl.h"
       - "/home/iarlohenrique/bin/GL/gl.h"
       - "/usr/local/bin/GL/gl.h"
@@ -941,6 +987,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -962,7 +1009,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:414 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_GLX_INCLUDE_DIR"
     description: "Path to a file."
@@ -977,6 +1024,7 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -995,6 +1043,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/GL/glx.h"
       - "/home/iarlohenrique/.local/bin/GL/glx.h"
       - "/home/iarlohenrique/bin/GL/glx.h"
       - "/usr/local/bin/GL/glx.h"
@@ -1005,6 +1054,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1026,7 +1076,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:415 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_EGL_INCLUDE_DIR"
     description: "Path to a file."
@@ -1041,6 +1091,7 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -1059,6 +1110,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/EGL/egl.h"
       - "/home/iarlohenrique/.local/bin/EGL/egl.h"
       - "/home/iarlohenrique/bin/EGL/egl.h"
       - "/usr/local/bin/EGL/egl.h"
@@ -1069,6 +1121,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1090,7 +1143,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:416 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_GLES2_INCLUDE_DIR"
     description: "Path to a file."
@@ -1105,6 +1158,7 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -1123,6 +1177,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/GLES2/gl2.h"
       - "/home/iarlohenrique/.local/bin/GLES2/gl2.h"
       - "/home/iarlohenrique/bin/GLES2/gl2.h"
       - "/usr/local/bin/GLES2/gl2.h"
@@ -1133,6 +1188,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1154,7 +1210,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:417 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_GLES3_INCLUDE_DIR"
     description: "Path to a file."
@@ -1169,6 +1225,7 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -1187,6 +1244,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/GLES3/gl3.h"
       - "/home/iarlohenrique/.local/bin/GLES3/gl3.h"
       - "/home/iarlohenrique/bin/GLES3/gl3.h"
       - "/usr/local/bin/GLES3/gl3.h"
@@ -1197,6 +1255,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1218,7 +1277,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:418 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_xmesa_INCLUDE_DIR"
     description: "Path to a file."
@@ -1233,6 +1292,7 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -1254,6 +1314,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/GL/xmesa.h"
       - "/home/iarlohenrique/.local/bin/GL/xmesa.h"
       - "/home/iarlohenrique/bin/GL/xmesa.h"
       - "/usr/local/bin/GL/xmesa.h"
@@ -1277,6 +1338,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1298,7 +1360,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:424 (find_path)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "path"
     variable: "OPENGL_GLU_INCLUDE_DIR"
     description: "Path to a file."
@@ -1313,6 +1375,7 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -1331,6 +1394,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/GL/glu.h"
       - "/home/iarlohenrique/.local/bin/GL/glu.h"
       - "/home/iarlohenrique/bin/GL/glu.h"
       - "/usr/local/bin/GL/glu.h"
@@ -1341,6 +1405,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1362,7 +1427,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:438 (find_library)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "library"
     variable: "OPENGL_opengl_LIBRARY"
     description: "Path to a library."
@@ -1377,6 +1442,7 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1392,6 +1458,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1402,6 +1469,7 @@ events:
     found: "/usr/lib64/libOpenGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1423,7 +1491,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:443 (find_library)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "library"
     variable: "OPENGL_glx_LIBRARY"
     description: "Path to a library."
@@ -1438,6 +1506,7 @@ events:
     names:
       - "GLX"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1453,6 +1522,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1463,6 +1533,7 @@ events:
     found: "/usr/lib64/libGLX.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1484,7 +1555,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:449 (find_library)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "library"
     variable: "OPENGL_egl_LIBRARY"
     description: "Path to a library."
@@ -1499,6 +1570,7 @@ events:
     names:
       - "EGL"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1514,6 +1586,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1524,6 +1597,7 @@ events:
     found: "/usr/lib64/libEGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1545,7 +1619,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:455 (find_library)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "library"
     variable: "OPENGL_gles2_LIBRARY"
     description: "Path to a library."
@@ -1560,6 +1634,7 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1575,6 +1650,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1585,6 +1661,7 @@ events:
     found: "/usr/lib64/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1606,7 +1683,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:460 (find_library)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "library"
     variable: "OPENGL_gles3_LIBRARY"
     description: "Path to a library."
@@ -1622,6 +1699,7 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1637,6 +1715,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1651,6 +1730,7 @@ events:
       - "/lib/"
       - "/opt/"
       - "/usr/lib64/X11/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1661,6 +1741,7 @@ events:
     found: "/usr/lib64/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1682,7 +1763,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindOpenGL.cmake:466 (find_library)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "library"
     variable: "OPENGL_glu_LIBRARY"
     description: "Path to a library."
@@ -1698,6 +1779,7 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1713,6 +1795,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1723,6 +1806,72 @@ events:
     found: "/usr/lib64/libGLU.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
+        - "/home/iarlohenrique/.local/bin"
+        - "/home/iarlohenrique/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenGL.cmake:521 (find_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    mode: "library"
+    variable: "OPENGL_gl_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "GL"
+      - "MesaGL"
+    candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
+      - "/home/iarlohenrique/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib64/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib64/"
+      - "/lib/"
+      - "/opt/"
+      - "/usr/lib64/X11/"
+    searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
+      - "/home/iarlohenrique/.local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib64/libGL.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1745,7 +1894,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
       - "/usr/share/cmake/Modules/FindGLUT.cmake:79 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
     mode: "program"
     variable: "PKG_CONFIG_EXECUTABLE"
     description: "pkg-config executable"
@@ -1761,6 +1910,7 @@ events:
       - "pkg-config"
       - "pkgconf"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -1784,6 +1934,8 @@ events:
       - "/opt/sbin/"
       - "/opt/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/pkg-config"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/pkgconf"
       - "/home/iarlohenrique/.local/bin/pkg-config"
       - "/home/iarlohenrique/.local/bin/pkgconf"
       - "/home/iarlohenrique/bin/pkg-config"
@@ -1793,6 +1945,7 @@ events:
     found: "/usr/bin/pkg-config"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1816,7 +1969,7 @@ events:
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
       - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
       - "/usr/share/cmake/Modules/FindGLUT.cmake:81 (pkg_check_modules)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib_PC_GLUT_glut"
     description: "Path to a library."
@@ -1835,6 +1988,7 @@ events:
     found: "/usr/lib64/libglut.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1856,7 +2010,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindGLUT.cmake:127 (find_library)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "GLUT_Xi_LIBRARY"
     description: "Path to a library."
@@ -1871,6 +2025,7 @@ events:
     names:
       - "Xi"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1886,6 +2041,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1903,6 +2059,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1924,7 +2081,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindGLUT.cmake:132 (find_library)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "GLUT_Xmu_LIBRARY"
     description: "Path to a library."
@@ -1939,6 +2096,7 @@ events:
     names:
       - "Xmu"
     candidate_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1954,6 +2112,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1971,6 +2130,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -1992,7 +2152,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindGLUT.cmake:151 (find_path)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
     mode: "path"
     variable: "GLUT_INCLUDE_DIR"
     description: "Path to a file."
@@ -2008,6 +2168,7 @@ events:
       - "GL/glut.h"
     candidate_directories:
       - "/usr/include/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/home/iarlohenrique/bin/"
       - "/usr/local/bin/"
@@ -2033,6 +2194,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"
@@ -2054,7 +2216,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/FindGLUT.cmake:164 (find_library)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:5 (find_package)"
     mode: "library"
     variable: "GLUT_glut_LIBRARY"
     description: "Path to a library."
@@ -2070,6 +2232,7 @@ events:
       - "glut"
     candidate_directories:
       - "/usr/lib64/"
+      - "/home/iarlohenrique/.local/share/nvim/mason/bin/"
       - "/home/iarlohenrique/.local/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -2087,6 +2250,7 @@ events:
     found: "/usr/lib64/libglut.so"
     search_context:
       ENV{PATH}:
+        - "/home/iarlohenrique/.local/share/nvim/mason/bin"
         - "/home/iarlohenrique/.local/bin"
         - "/home/iarlohenrique/bin"
         - "/usr/local/bin"

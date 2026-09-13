@@ -53,6 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/programa.dir/DependInfo.cmake"
-  "CMakeFiles/teste.dir/DependInfo.cmake"
+  "CMakeFiles/cg-lab.dir/DependInfo.cmake"
   )

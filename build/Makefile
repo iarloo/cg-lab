@@ -117,222 +117,185 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named programa
+# Target rules for targets named cg-lab
 
 # Build rule for target.
-programa: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programa
-.PHONY : programa
+cg-lab: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cg-lab
+.PHONY : cg-lab
 
 # fast build rule for target.
-programa/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/build
-.PHONY : programa/fast
+cg-lab/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/build
+.PHONY : cg-lab/fast
 
-#=============================================================================
-# Target rules for targets named teste
-
-# Build rule for target.
-teste: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teste
-.PHONY : teste
-
-# fast build rule for target.
-teste/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/build
-.PHONY : teste/fast
-
-basicGlutGlCurvaFechadaTransformaTrab2026.o: basicGlutGlCurvaFechadaTransformaTrab2026.c.o
-.PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.o
+src/desenhos.o: src/desenhos.c.o
+.PHONY : src/desenhos.o
 
 # target to build an object file
-basicGlutGlCurvaFechadaTransformaTrab2026.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/basicGlutGlCurvaFechadaTransformaTrab2026.c.o
-.PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.c.o
+src/desenhos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/desenhos.c.o
+.PHONY : src/desenhos.c.o
 
-basicGlutGlCurvaFechadaTransformaTrab2026.i: basicGlutGlCurvaFechadaTransformaTrab2026.c.i
-.PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.i
+src/desenhos.i: src/desenhos.c.i
+.PHONY : src/desenhos.i
 
 # target to preprocess a source file
-basicGlutGlCurvaFechadaTransformaTrab2026.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/basicGlutGlCurvaFechadaTransformaTrab2026.c.i
-.PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.c.i
+src/desenhos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/desenhos.c.i
+.PHONY : src/desenhos.c.i
 
-basicGlutGlCurvaFechadaTransformaTrab2026.s: basicGlutGlCurvaFechadaTransformaTrab2026.c.s
-.PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.s
+src/desenhos.s: src/desenhos.c.s
+.PHONY : src/desenhos.s
 
 # target to generate assembly for a file
-basicGlutGlCurvaFechadaTransformaTrab2026.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/basicGlutGlCurvaFechadaTransformaTrab2026.c.s
-.PHONY : basicGlutGlCurvaFechadaTransformaTrab2026.c.s
+src/desenhos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/desenhos.c.s
+.PHONY : src/desenhos.c.s
 
-desenhos.o: desenhos.c.o
-.PHONY : desenhos.o
+src/janela.o: src/janela.c.o
+.PHONY : src/janela.o
 
 # target to build an object file
-desenhos.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/desenhos.c.o
-.PHONY : desenhos.c.o
+src/janela.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/janela.c.o
+.PHONY : src/janela.c.o
 
-desenhos.i: desenhos.c.i
-.PHONY : desenhos.i
+src/janela.i: src/janela.c.i
+.PHONY : src/janela.i
 
 # target to preprocess a source file
-desenhos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/desenhos.c.i
-.PHONY : desenhos.c.i
+src/janela.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/janela.c.i
+.PHONY : src/janela.c.i
 
-desenhos.s: desenhos.c.s
-.PHONY : desenhos.s
+src/janela.s: src/janela.c.s
+.PHONY : src/janela.s
 
 # target to generate assembly for a file
-desenhos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/desenhos.c.s
-.PHONY : desenhos.c.s
+src/janela.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/janela.c.s
+.PHONY : src/janela.c.s
 
-janela.o: janela.c.o
-.PHONY : janela.o
+src/main.o: src/main.c.o
+.PHONY : src/main.o
 
 # target to build an object file
-janela.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/janela.c.o
-.PHONY : janela.c.o
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-janela.i: janela.c.i
-.PHONY : janela.i
+src/main.i: src/main.c.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-janela.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/janela.c.i
-.PHONY : janela.c.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-janela.s: janela.c.s
-.PHONY : janela.s
+src/main.s: src/main.c.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-janela.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/janela.c.s
-.PHONY : janela.c.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-main.o: main.c.o
-.PHONY : main.o
+src/menu.o: src/menu.c.o
+.PHONY : src/menu.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/main.c.o
-.PHONY : main.c.o
+src/menu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/menu.c.o
+.PHONY : src/menu.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+src/menu.i: src/menu.c.i
+.PHONY : src/menu.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/main.c.i
-.PHONY : main.c.i
+src/menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/menu.c.i
+.PHONY : src/menu.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+src/menu.s: src/menu.c.s
+.PHONY : src/menu.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/main.c.s
-.PHONY : main.c.s
+src/menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/menu.c.s
+.PHONY : src/menu.c.s
 
-menu.o: menu.c.o
-.PHONY : menu.o
+src/mouse.o: src/mouse.c.o
+.PHONY : src/mouse.o
 
 # target to build an object file
-menu.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/menu.c.o
-.PHONY : menu.c.o
+src/mouse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/mouse.c.o
+.PHONY : src/mouse.c.o
 
-menu.i: menu.c.i
-.PHONY : menu.i
+src/mouse.i: src/mouse.c.i
+.PHONY : src/mouse.i
 
 # target to preprocess a source file
-menu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/menu.c.i
-.PHONY : menu.c.i
+src/mouse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/mouse.c.i
+.PHONY : src/mouse.c.i
 
-menu.s: menu.c.s
-.PHONY : menu.s
+src/mouse.s: src/mouse.c.s
+.PHONY : src/mouse.s
 
 # target to generate assembly for a file
-menu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/menu.c.s
-.PHONY : menu.c.s
+src/mouse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/mouse.c.s
+.PHONY : src/mouse.c.s
 
-mouse.o: mouse.c.o
-.PHONY : mouse.o
+src/vertices.o: src/vertices.c.o
+.PHONY : src/vertices.o
 
 # target to build an object file
-mouse.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mouse.c.o
-.PHONY : mouse.c.o
+src/vertices.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/vertices.c.o
+.PHONY : src/vertices.c.o
 
-mouse.i: mouse.c.i
-.PHONY : mouse.i
+src/vertices.i: src/vertices.c.i
+.PHONY : src/vertices.i
 
 # target to preprocess a source file
-mouse.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mouse.c.i
-.PHONY : mouse.c.i
+src/vertices.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/vertices.c.i
+.PHONY : src/vertices.c.i
 
-mouse.s: mouse.c.s
-.PHONY : mouse.s
+src/vertices.s: src/vertices.c.s
+.PHONY : src/vertices.s
 
 # target to generate assembly for a file
-mouse.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/mouse.c.s
-.PHONY : mouse.c.s
+src/vertices.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/src/vertices.c.s
+.PHONY : src/vertices.c.s
 
-transformacoes.o: transformacoes.c.o
-.PHONY : transformacoes.o
+transformacoes/transformacoes.o: transformacoes/transformacoes.c.o
+.PHONY : transformacoes/transformacoes.o
 
 # target to build an object file
-transformacoes.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/transformacoes.c.o
-.PHONY : transformacoes.c.o
+transformacoes/transformacoes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.o
+.PHONY : transformacoes/transformacoes.c.o
 
-transformacoes.i: transformacoes.c.i
-.PHONY : transformacoes.i
-
-# target to preprocess a source file
-transformacoes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/transformacoes.c.i
-.PHONY : transformacoes.c.i
-
-transformacoes.s: transformacoes.c.s
-.PHONY : transformacoes.s
-
-# target to generate assembly for a file
-transformacoes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/transformacoes.c.s
-.PHONY : transformacoes.c.s
-
-vertices.o: vertices.c.o
-.PHONY : vertices.o
-
-# target to build an object file
-vertices.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/vertices.c.o
-.PHONY : vertices.c.o
-
-vertices.i: vertices.c.i
-.PHONY : vertices.i
+transformacoes/transformacoes.i: transformacoes/transformacoes.c.i
+.PHONY : transformacoes/transformacoes.i
 
 # target to preprocess a source file
-vertices.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/vertices.c.i
-.PHONY : vertices.c.i
+transformacoes/transformacoes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.i
+.PHONY : transformacoes/transformacoes.c.i
 
-vertices.s: vertices.c.s
-.PHONY : vertices.s
+transformacoes/transformacoes.s: transformacoes/transformacoes.c.s
+.PHONY : transformacoes/transformacoes.s
 
 # target to generate assembly for a file
-vertices.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/programa.dir/build.make CMakeFiles/programa.dir/vertices.c.s
-.PHONY : vertices.c.s
+transformacoes/transformacoes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.s
+.PHONY : transformacoes/transformacoes.c.s
 
 # Help Target
 help:
@@ -342,32 +305,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... programa"
-	@echo "... teste"
-	@echo "... basicGlutGlCurvaFechadaTransformaTrab2026.o"
-	@echo "... basicGlutGlCurvaFechadaTransformaTrab2026.i"
-	@echo "... basicGlutGlCurvaFechadaTransformaTrab2026.s"
-	@echo "... desenhos.o"
-	@echo "... desenhos.i"
-	@echo "... desenhos.s"
-	@echo "... janela.o"
-	@echo "... janela.i"
-	@echo "... janela.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
-	@echo "... mouse.o"
-	@echo "... mouse.i"
-	@echo "... mouse.s"
-	@echo "... transformacoes.o"
-	@echo "... transformacoes.i"
-	@echo "... transformacoes.s"
-	@echo "... vertices.o"
-	@echo "... vertices.i"
-	@echo "... vertices.s"
+	@echo "... cg-lab"
+	@echo "... src/desenhos.o"
+	@echo "... src/desenhos.i"
+	@echo "... src/desenhos.s"
+	@echo "... src/janela.o"
+	@echo "... src/janela.i"
+	@echo "... src/janela.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/menu.o"
+	@echo "... src/menu.i"
+	@echo "... src/menu.s"
+	@echo "... src/mouse.o"
+	@echo "... src/mouse.i"
+	@echo "... src/mouse.s"
+	@echo "... src/vertices.o"
+	@echo "... src/vertices.i"
+	@echo "... src/vertices.s"
+	@echo "... transformacoes/transformacoes.o"
+	@echo "... transformacoes/transformacoes.i"
+	@echo "... transformacoes/transformacoes.s"
 .PHONY : help
 
 
