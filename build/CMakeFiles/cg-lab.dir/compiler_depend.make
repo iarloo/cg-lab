@@ -537,7 +537,6 @@ cg-lab: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/libglut.so \
   /usr/lib64/libstdc++.so.6 \
   /usr/lib64/libxcb.so.1 \
-  CMakeFiles/cg-lab.dir/curvas/curvas.c.o \
   CMakeFiles/cg-lab.dir/src/desenhos.c.o \
   CMakeFiles/cg-lab.dir/src/janela.c.o \
   CMakeFiles/cg-lab.dir/src/main.c.o \
@@ -674,8 +673,6 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o:
 /usr/lib64/libstdc++.so.6:
 
 /usr/include/bits/floatn-common.h:
-
-CMakeFiles/cg-lab.dir/curvas/curvas.c.o:
 
 /usr/include/bits/floatn.h:
 
