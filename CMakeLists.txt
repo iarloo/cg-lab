@@ -1,30 +1,23 @@
-cmake_minimum_required(VERSION 3.16)
-
-project(Trabalho_1 C)
-
-set(OpenGL_GL_PREFERENCE GLVND)
+cmake_minimum_required(VERSION 3.10)
+project(cg-lab C)
 
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 
 add_executable(
-  programa
-  main.c
-  mouse.c
-  menu.c
-  janela.c
-  desenhos.c
-  transformacoes.c
-  vertices.c
-  globals.h
-  mouse.h
-  menu.h
-  janela.h
-  desenhos.h
-  transformacoes.h
-  vertices.h)
-add_executable(teste basicGlutGlCurvaFechadaTransformaTrab2026.c)
+  cg-lab
+  src/main.c
+  src/mouse.c
+  src/menu.c
+  src/janela.c
+  src/desenhos.c
+  src/vertices.c
+  transformacoes/transformacoes.c
+  curvas/curvas.c)
 
-target_link_libraries(programa PRIVATE GLUT::GLUT OpenGL::GLU OpenGL::GL m)
+target_include_directories(
+  cg-lab PRIVATE src transformacoes curvas
+                 # cores animacao
+)
 
-target_link_libraries(teste PRIVATE GLUT::GLUT OpenGL::GLU OpenGL::GL m)
+target_link_libraries(cg-lab OpenGL::GL OpenGL::GLU GLUT::GLUT m)
