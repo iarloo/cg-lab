@@ -1,0 +1,22 @@
+
+#define POSISAO_JANELA_X 100
+#define POSISAO_JANELA_Y 100
+
+#define TAMANHO_JANELA_LARGURA 1280
+#define TAMANHO_JANELA_ALTURA 720
+
+#define MAX_VERTICES 10
+
+// OPÇÕES MENU
+#define TRANSLACAO 1
+#define ROTACAO 2
+#define ESCALA 3
+#define ESPELHOX 4
+#define ESPELHOY 5
+#define ESPELHOORIGEM 6
+#define CISALHA 7
+
+#define HERMITE 1
+#define BEZIER 2
+#define BSPLINE 3
+#define CATMULLR 4
