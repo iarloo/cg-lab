@@ -106,6 +106,8 @@ void mouseEscala(int state, int clickX, int clickY) {
         fazerEscala(poligono, multiplicador, ancorax, ancoray);
         // Calculamos novamente os cantos de seleção desse poligono.
         getCantosSelect(poligono);
+
+        setAngulos(poligono);
       }
       // Chamamos espacoDeDesenho de novo.
       glutPostRedisplay();
