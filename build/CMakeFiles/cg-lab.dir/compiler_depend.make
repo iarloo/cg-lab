@@ -32,7 +32,7 @@ CMakeFiles/cg-lab.dir/curvas/curvas.c.o: /home/iarlohenrique/Documentos/Faculdad
 
 CMakeFiles/cg-lab.dir/src/desenhos.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/desenhos.c \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/curvas/curvas.h \
-  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/constantes.h \
+  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/globals.h \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.h \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -530,10 +530,6 @@ CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.o:
 
 CMakeFiles/cg-lab.dir/src/vertices.c.o:
 
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/uintn-identity.h:
-
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/mathcalls-helper-functions.h:
@@ -564,6 +560,18 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o:
 
 /usr/include/GL/glext.h:
 
+/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/globals.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/lib64/libGLdispatch.so.0:
+
+/usr/include/math.h:
+
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/bits/pthreadtypes.h:
@@ -583,18 +591,6 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o:
 /usr/include/bits/waitstatus.h:
 
 /usr/include/bits/libc-header-start.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/lib64/libGLdispatch.so.0:
-
-/usr/include/math.h:
-
-/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/globals.h:
 
 /usr/include/bits/floatn.h:
 
@@ -653,6 +649,10 @@ CMakeFiles/cg-lab.dir/curvas/curvas.c.o:
 /usr/lib/gcc/x86_64-redhat-linux/16/include/stdarg.h:
 
 /usr/include/alloca.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/waitflags.h:
 

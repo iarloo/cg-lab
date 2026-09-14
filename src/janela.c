@@ -36,7 +36,10 @@ void espacoDeDesenho() {
 
   desenha_plano_cartesiano(poligono);
   desenha_ponto(poligono);
-  desenha_poligono(poligono);
+  if (poligono->opcaoCurva == 0) {
+
+    desenha_poligono(poligono);
+  }
 
   if (poligono->opcaoTransformacao == ESCALA) {
 

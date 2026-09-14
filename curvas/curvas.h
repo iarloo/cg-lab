@@ -5,7 +5,7 @@
 
 // Quantos pontos amostrados gerar por segmento da curva.
 // Mais alto = curva mais suave, mais pontos pra desenhar.
-#define RESOLUCAO_CURVA 50
+#define RESOLUCAO_CURVA 500
 
 typedef struct pontoCurva {
   double x;

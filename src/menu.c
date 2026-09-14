@@ -47,6 +47,11 @@ void menuCurvas(int escolha) {
     poligono->opcaoCurva = CATMULLR;
     glutPostRedisplay();
     break;
+
+  case 5:
+    poligono->opcaoCurva = 0;
+    glutPostRedisplay();
+    break;
   }
 }
 void menuTransformacao(int escolha) {
@@ -114,6 +119,7 @@ void configuraMenus() {
   glutAddMenuEntry("Bezier", BEZIER);
   glutAddMenuEntry("Bspline", BSPLINE);
   glutAddMenuEntry("Catmullar", CATMULLR);
+  glutAddMenuEntry("Tirar curva", 5);
 
   glutCreateMenu(menuPrincipal);
   glutAddSubMenu("Transformacoes", submenu1);

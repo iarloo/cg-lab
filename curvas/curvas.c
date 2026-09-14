@@ -24,22 +24,35 @@ double static avaliaHermiteEscalar(double t, double p0, double p1, double t0,
 }
 
 int calculaHermite(programa *poligono, pontoCurva *saida, int capacidade) {
-
-  double p0x = poligono->inicio->x;
-  double p0y = poligono->inicio->y;
-
-  double p1x = poligono->ultimo->x;
-  double p1y = poligono->ultimo->y;
-
+  double p0x, p0y, p1x, p1y;
   if (capacidade == 1) {
     return 0;
   }
 
-  for (int i = 0; i < capacidade; i++) {
-    double t = i / (double)(capacidade - 1);
+  int i = 0;
 
-    saida[i].x = avaliaHermiteEscalar(t, p0x, p1x, 100, 10);
-    saida[i].y = avaliaHermiteEscalar(t, p0y, p1y, 90, 30);
+  for (ponto *atual = poligono->inicio; atual != NULL; atual = atual->proximo) {
+    p0x = atual->x;
+    p0y = atual->y;
+
+    if (atual->proximo == NULL) {
+
+      p1x = poligono->inicio->x;
+      p1y = poligono->inicio->y;
+
+    } else {
+
+      p1x = atual->proximo->x;
+
+      p1y = atual->proximo->y;
+    }
+    for (int j = 0; j < capacidade / poligono->numPontos; j++) {
+      double t = j / (double)(capacidade / poligono->numPontos - 1);
+
+      saida[i].x = avaliaHermiteEscalar(t, p0x, p1x, 100, 10);
+      saida[i].y = avaliaHermiteEscalar(t, p0y, p1y, 90, 30);
+      i++;
+    }
   }
 
   return capacidade;
