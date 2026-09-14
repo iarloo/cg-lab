@@ -1,4 +1,5 @@
 
+#include "curvas.h"
 #include "vertices.h"
 #include <GL/gl.h>
 #include <math.h>
@@ -126,4 +127,24 @@ void desenha_selecao_poligono(programa *poligono, double multiplicador,
     glVertex2f(infEsqX, infEsqY);
     glEnd();
   }
+}
+
+void desenha_curva(programa *poligono) {
+
+  pontoCurva pontos[RESOLUCAO_CURVA];
+
+  if (poligono->numPontos < 2) {
+    return;
+  }
+
+  int numPontosCalculados = calculaCurva(poligono, pontos, RESOLUCAO_CURVA);
+
+  glColor3f(poligono->rgbLinha[0], poligono->rgbLinha[1],
+            poligono->rgbLinha[2]);
+  glLineWidth(3);
+  glBegin(GL_LINE_STRIP);
+  for (int i = 0; i < numPontosCalculados; i++) {
+    glVertex2f(pontos[i].x, pontos[i].y);
+  }
+  glEnd();
 }

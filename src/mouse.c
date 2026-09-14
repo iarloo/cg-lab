@@ -1,5 +1,6 @@
 #include "mouse.h"
 #include "../transformacoes/transformacoes.h"
+#include "constantes.h"
 #include "desenhos.h"
 #include "globals.h"
 #include "vertices.h"

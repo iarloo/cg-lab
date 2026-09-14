@@ -12,3 +12,4 @@ void desenha_selecao_poligono(programa *poligono, double multiplicador,
                               int ancoraX, int ancoraY, int ponto);
 
 void getCantosSelect(programa *poligono);
+void desenha_curva(programa *poligono);

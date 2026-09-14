@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "constantes.h"
 #include "desenhos.h"
 #include "globals.h"
 #include "transformacoes.h"
@@ -6,7 +7,6 @@
 #include <GL/freeglut_std.h>
 #include <GL/glut.h>
 #include <stdlib.h>
-
 void menuPrincipal(int escolha) {
 
   switch (escolha) {
@@ -24,7 +24,31 @@ void menuPrincipal(int escolha) {
 
   glutPostRedisplay();
 }
-void menuCurvas(int escolha) {}
+void menuCurvas(int escolha) {
+
+  switch (escolha) {
+  case HERMITE:
+    poligono->opcaoCurva = HERMITE;
+    glutPostRedisplay();
+    break;
+
+  case BEZIER:
+    poligono->opcaoCurva = BEZIER;
+    glutPostRedisplay();
+    break;
+
+  case BSPLINE:
+
+    poligono->opcaoCurva = BSPLINE;
+    glutPostRedisplay();
+    break;
+
+  case CATMULLR:
+    poligono->opcaoCurva = CATMULLR;
+    glutPostRedisplay();
+    break;
+  }
+}
 void menuTransformacao(int escolha) {
 
   switch (escolha) {

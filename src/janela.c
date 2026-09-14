@@ -32,8 +32,6 @@ void redimensionar(int largura, int altura) {
 void espacoDeDesenho() {
 
   glClearColor(1, 1, 1, 1);
-
-  // Limpando o buffer de cor do
   glClear(GL_COLOR_BUFFER_BIT);
 
   desenha_plano_cartesiano(poligono);
@@ -62,6 +60,10 @@ void espacoDeDesenho() {
     desenha_selecao_poligono(poligono, multiplicadorPreview,
                              poligono->selectInfEsq.x, poligono->selectInfEsq.y,
                              0);
+  }
+
+  if (poligono->opcaoCurva != 0) {
+    desenha_curva(poligono);
   }
 
   glFlush();
