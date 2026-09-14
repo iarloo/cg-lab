@@ -3,6 +3,7 @@
 #include "globals.h"
 #include "transformacoes.h"
 #include "vertices.h"
+#include <GL/freeglut_std.h>
 #include <GL/glut.h>
 #include <stdlib.h>
 
@@ -29,14 +30,17 @@ void menuTransformacao(int escolha) {
   switch (escolha) {
   case TRANSLACAO:
     poligono->opcaoTransformacao = TRANSLACAO;
+    glutPostRedisplay();
     break;
 
   case ROTACAO:
     poligono->opcaoTransformacao = ROTACAO;
+    glutPostRedisplay();
     break;
 
   case ESCALA:
     poligono->opcaoTransformacao = ESCALA;
+    glutPostRedisplay();
     break;
 
   case ESPELHOX:

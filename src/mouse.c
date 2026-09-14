@@ -1,10 +1,10 @@
 #include "mouse.h"
+#include "../transformacoes/transformacoes.h"
 #include "desenhos.h"
 #include "globals.h"
-#include "transformacoes.h"
 #include "vertices.h"
 #include <GL/glut.h>
-
+#include <math.h>
 void mouseTranslacao(int state, int clickX, int clickY) {
   // se a translação foi escolhida e o botão no mouse foi segurado
   if (state == GLUT_DOWN) {
@@ -203,15 +203,20 @@ void mouseDefault(int button, int state, int clickX, int clickY) {
     limpou = 0;
     return;
   }
-  if (button != GLUT_LEFT_BUTTON || state != GLUT_DOWN) {
-
+  if (button != GLUT_LEFT_BUTTON || state != GLUT_DOWN)
     return;
-  }
+
   if (poligono->numPontos < 6) {
     poligono->rgbPonto[0] = 1;
     poligono->rgbPonto[1] = 0;
     poligono->rgbPonto[2] = 0;
     novo_ponto(clickX, clickY, poligono);
+
+    if (poligono->numPontos >= 3) {
+      setAngulos(poligono);
+    }
+    getCantosSelect(poligono);
+
     glutPostRedisplay();
   }
 }

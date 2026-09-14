@@ -158,18 +158,8 @@ CMakeFiles/cg-lab.dir/src/main.c.o: /home/iarlohenrique/Documentos/Faculdade/6Pe
   /usr/include/bits/endianness.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -203,7 +193,6 @@ CMakeFiles/cg-lab.dir/src/main.c.o: /home/iarlohenrique/Documentos/Faculdade/6Pe
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
-  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdlib.h \
@@ -233,18 +222,8 @@ CMakeFiles/cg-lab.dir/src/menu.c.o: /home/iarlohenrique/Documentos/Faculdade/6Pe
   /usr/include/bits/endianness.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -278,7 +257,6 @@ CMakeFiles/cg-lab.dir/src/menu.c.o: /home/iarlohenrique/Documentos/Faculdade/6Pe
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
-  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdlib.h \
@@ -289,12 +267,12 @@ CMakeFiles/cg-lab.dir/src/menu.c.o: /home/iarlohenrique/Documentos/Faculdade/6Pe
   /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h
 
 CMakeFiles/cg-lab.dir/src/mouse.c.o: /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/mouse.c \
+  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes/transformacoes.h \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/constantes.c \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/desenhos.h \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/globals.h \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/mouse.h \
   /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.h \
-  /home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes/transformacoes.h \
   /usr/include/GL/freeglut_std.h \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -381,18 +359,8 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o: /home/iarlohenrique/Documentos/Faculdade
   /usr/include/bits/endianness.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -434,7 +402,6 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o: /home/iarlohenrique/Documentos/Faculdade
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
-  /usr/include/math.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \

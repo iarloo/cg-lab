@@ -1,8 +1,6 @@
 #ifndef vertices
 #define vertices
 
-#include <stdlib.h>
-
 typedef struct ponto {
 
   int x;

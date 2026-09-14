@@ -1,7 +1,6 @@
 #include "vertices.h"
-#include <math.h>
-void fazerTranslacao(int x, int y, programa *poligono);
 double areaPoligono(programa *poligono);
+void fazerTranslacao(int x, int y, programa *poligono);
 void baricentroPoligono(programa *poligono);
 void setAngulos(programa *poligono);
 void fazerRotacao(programa *poligono, double angulo);

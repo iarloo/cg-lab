@@ -1,6 +1,4 @@
 #include "vertices.h"
-#include "desenhos.h"
-#include "transformacoes.h"
 #include <stdio.h>
 #include <stdlib.h>
 programa *inicializa_lista() {
@@ -30,7 +28,6 @@ programa *inicializa_lista() {
 }
 
 void novo_ponto(int x, int y, programa *poligono) {
-
   ponto *novo_ponto = (ponto *)malloc(sizeof(ponto));
   novo_ponto->x = x;
   novo_ponto->y = y;
@@ -39,24 +36,13 @@ void novo_ponto(int x, int y, programa *poligono) {
   novo_ponto->proximo = NULL;
 
   if (poligono->numPontos == 0) {
-
     poligono->inicio = novo_ponto;
-
   } else {
     poligono->ultimo->proximo = novo_ponto;
   }
 
   poligono->ultimo = novo_ponto;
   poligono->numPontos++;
-
-  printf("novo ponto %d\n", poligono->numPontos);
-
-  if (poligono->numPontos >= 3) {
-
-    setAngulos(poligono);
-  }
-
-  getCantosSelect(poligono);
 }
 
 void apaga_ponto(programa *poligono) {
