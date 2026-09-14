@@ -1,7 +1,8 @@
-#include "desenhos.h"
+
 #include "vertices.h"
 #include <GL/gl.h>
 #include <math.h>
+#include <stdlib.h>
 void desenha_ponto(programa *poligono) {
 
   glColor3f(poligono->rgbPonto[0], poligono->rgbPonto[1],

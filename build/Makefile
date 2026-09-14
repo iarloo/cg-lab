@@ -129,6 +129,30 @@ cg-lab/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/build
 .PHONY : cg-lab/fast
 
+curvas/curvas.o: curvas/curvas.c.o
+.PHONY : curvas/curvas.o
+
+# target to build an object file
+curvas/curvas.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/curvas/curvas.c.o
+.PHONY : curvas/curvas.c.o
+
+curvas/curvas.i: curvas/curvas.c.i
+.PHONY : curvas/curvas.i
+
+# target to preprocess a source file
+curvas/curvas.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/curvas/curvas.c.i
+.PHONY : curvas/curvas.c.i
+
+curvas/curvas.s: curvas/curvas.c.s
+.PHONY : curvas/curvas.s
+
+# target to generate assembly for a file
+curvas/curvas.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cg-lab.dir/build.make CMakeFiles/cg-lab.dir/curvas/curvas.c.s
+.PHONY : curvas/curvas.c.s
+
 src/desenhos.o: src/desenhos.c.o
 .PHONY : src/desenhos.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cg-lab"
+	@echo "... curvas/curvas.o"
+	@echo "... curvas/curvas.i"
+	@echo "... curvas/curvas.s"
 	@echo "... src/desenhos.o"
 	@echo "... src/desenhos.i"
 	@echo "... src/desenhos.s"

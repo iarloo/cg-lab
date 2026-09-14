@@ -12,10 +12,11 @@ add_executable(
   src/janela.c
   src/desenhos.c
   src/vertices.c
-  transformacoes/transformacoes.c)
+  transformacoes/transformacoes.c
+  curvas/curvas.c)
 
 target_include_directories(
-  cg-lab PRIVATE src transformacoes
+  cg-lab PRIVATE src transformacoes curvas
                  # cores animacao
 )
 

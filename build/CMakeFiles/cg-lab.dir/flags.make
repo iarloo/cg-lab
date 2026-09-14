@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src -I/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes
+C_INCLUDES = -I/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src -I/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes -I/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/curvas
 
 C_FLAGS = 
 

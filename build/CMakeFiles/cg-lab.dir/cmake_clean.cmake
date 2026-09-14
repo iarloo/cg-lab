@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cg-lab.dir/link.d"
+  "CMakeFiles/cg-lab.dir/curvas/curvas.c.o"
+  "CMakeFiles/cg-lab.dir/curvas/curvas.c.o.d"
   "CMakeFiles/cg-lab.dir/src/desenhos.c.o"
   "CMakeFiles/cg-lab.dir/src/desenhos.c.o.d"
   "CMakeFiles/cg-lab.dir/src/janela.c.o"

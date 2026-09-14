@@ -1,4 +1,5 @@
 #include "janela.h"
+#include "constantes.h"
 #include "desenhos.h"
 #include "globals.h"
 #include "vertices.h"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/curvas/curvas.c" "CMakeFiles/cg-lab.dir/curvas/curvas.c.o" "gcc" "CMakeFiles/cg-lab.dir/curvas/curvas.c.o.d"
   "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/desenhos.c" "CMakeFiles/cg-lab.dir/src/desenhos.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/desenhos.c.o.d"
   "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/janela.c" "CMakeFiles/cg-lab.dir/src/janela.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/janela.c.o.d"
   "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/main.c" "CMakeFiles/cg-lab.dir/src/main.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/main.c.o.d"

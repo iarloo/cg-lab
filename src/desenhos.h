@@ -1,4 +1,4 @@
-#include "constantes.c"
+
 #include "vertices.h"
 #include <GL/gl.h>
 #include <GL/glu.h>

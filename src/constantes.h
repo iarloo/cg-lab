@@ -1,3 +1,5 @@
+#ifndef CONSTANTES_H
+#define CONSTANTES_H
 
 #define POSISAO_JANELA_X 100
 #define POSISAO_JANELA_Y 100
@@ -20,3 +22,5 @@
 #define BEZIER 2
 #define BSPLINE 3
 #define CATMULLR 4
+
+#endif

@@ -1,3 +1,4 @@
+#include "constantes.h"
 #include "desenhos.h"
 #include "globals.h"
 #include "janela.h"
