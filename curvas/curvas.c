@@ -69,8 +69,40 @@ int calculaBSpline(programa *poligono, pontoCurva *saida, int capacidade) {
 }
 
 int calculaCatmullRom(programa *poligono, pontoCurva *saida, int capacidade) {
-  // TODO
-  return 0;
+  int n = poligono->numPontos;
+  double xs[n], ys[n];
+
+  int k = 0;
+  for (ponto *atual = poligono->inicio; atual != NULL; atual = atual->proximo) {
+    xs[k] = atual->x;
+    ys[k] = atual->y;
+    k++;
+  }
+
+  int pontosPorSegmento = capacidade / n;
+  int pos = 0;
+
+  for (int seg = 0; seg < n; seg++) {
+    int i0 = seg;
+    int i1 = (seg + 1) % n;
+    int iAntesI0 = (seg - 1 + n) % n;
+    int iDepoisI1 = (seg + 2) % n;
+
+    double t0x = (xs[i1] - xs[iAntesI0]) / 2.0;
+    double t0y = (ys[i1] - ys[iAntesI0]) / 2.0;
+    double t1x = (xs[iDepoisI1] - xs[i0]) / 2.0;
+    double t1y = (ys[iDepoisI1] - ys[i0]) / 2.0;
+
+    for (int j = 0; j < pontosPorSegmento; j++) {
+      double t = j / (double)(pontosPorSegmento - 1);
+
+      saida[pos].x = avaliaHermiteEscalar(t, xs[i0], xs[i1], t0x, t1x);
+      saida[pos].y = avaliaHermiteEscalar(t, ys[i0], ys[i1], t0y, t1y);
+      pos++;
+    }
+  }
+
+  return pos;
 }
 
 int calculaCurva(programa *poligono, pontoCurva *saida, int capacidade) {
