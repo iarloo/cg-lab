@@ -209,7 +209,7 @@ void mouseDefault(int button, int state, int clickX, int clickY) {
   if (button != GLUT_LEFT_BUTTON || state != GLUT_DOWN)
     return;
 
-  if (poligono->numPontos < 6) {
+  if (poligono->numPontos < MAX_VERTICES) {
     poligono->rgbPonto[0] = 1;
     poligono->rgbPonto[1] = 0;
     poligono->rgbPonto[2] = 0;

@@ -34,14 +34,16 @@ void novo_ponto(int x, int y, programa *poligono) {
   novo_ponto->z = 0;
   novo_ponto->anguloCentro = 0;
   novo_ponto->proximo = NULL;
-
+  novo_ponto->anterior = NULL;
   if (poligono->numPontos == 0) {
     poligono->inicio = novo_ponto;
   } else {
     poligono->ultimo->proximo = novo_ponto;
+    novo_ponto->anterior = poligono->ultimo;
   }
 
   poligono->ultimo = novo_ponto;
+
   poligono->numPontos++;
 }
 

@@ -6,6 +6,10 @@
 static const double M_HERMITE[4][4] = {
     {2, -2, 1, 1}, {-3, 3, -2, -1}, {0, 0, 1, 0}, {1, 0, 0, 0}};
 
+static const double M_BEZIER[4][4] = {
+  {-1, 3, -3, 1}, {3, -6, 3, 0}, {-3, 3, 0, 0}, {1, 0, 0, 0}};
+     
+
 double static avaliaHermiteEscalar(double t, double p0, double p1, double t0,
                                    double t1) {
   double base[4] = {t * t * t, t * t, t, 1.0};
@@ -59,7 +63,7 @@ int calculaHermite(programa *poligono, pontoCurva *saida, int capacidade) {
 }
 
 int calculaBezier(programa *poligono, pontoCurva *saida, int capacidade) {
-  // TODO
+  //
   return 0;
 }
 

@@ -9,7 +9,7 @@ typedef struct ponto {
   double anguloCentro;
   double raioCentro;
   struct ponto *proximo;
-
+  struct ponto *anterior;
 } ponto;
 
 typedef struct cantosPoligono {

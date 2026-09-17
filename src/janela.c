@@ -36,9 +36,10 @@ void espacoDeDesenho() {
 
   desenha_plano_cartesiano(poligono);
   desenha_ponto(poligono);
-  if (poligono->opcaoCurva == 0) {
+  if (poligono->opcaoTransformacao != 0 && poligono->opcaoCurva == 0) {
 
     desenha_poligono(poligono);
+  
   }
 
   if (poligono->opcaoTransformacao == ESCALA) {
@@ -47,7 +48,7 @@ void espacoDeDesenho() {
 
     if (arrastando && distNoClick > 0.001) {
       multiplicadorPreview = distNoRelease / distNoClick;
-    } else {
+    } else { 
       multiplicadorPreview = 1.0;
     }
     desenha_selecao_poligono(poligono, multiplicadorPreview, ancorax, ancoray,

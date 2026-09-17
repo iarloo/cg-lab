@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/curvas/curvas.c" "CMakeFiles/cg-lab.dir/curvas/curvas.c.o" "gcc" "CMakeFiles/cg-lab.dir/curvas/curvas.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/desenhos.c" "CMakeFiles/cg-lab.dir/src/desenhos.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/desenhos.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/janela.c" "CMakeFiles/cg-lab.dir/src/janela.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/janela.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/main.c" "CMakeFiles/cg-lab.dir/src/main.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/main.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/menu.c" "CMakeFiles/cg-lab.dir/src/menu.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/menu.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/mouse.c" "CMakeFiles/cg-lab.dir/src/mouse.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/mouse.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.c" "CMakeFiles/cg-lab.dir/src/vertices.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/vertices.c.o.d"
-  "/home/iarlohenrique/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes/transformacoes.c" "CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.o" "gcc" "CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/curvas/curvas.c" "CMakeFiles/cg-lab.dir/curvas/curvas.c.o" "gcc" "CMakeFiles/cg-lab.dir/curvas/curvas.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/desenhos.c" "CMakeFiles/cg-lab.dir/src/desenhos.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/desenhos.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/janela.c" "CMakeFiles/cg-lab.dir/src/janela.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/janela.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/main.c" "CMakeFiles/cg-lab.dir/src/main.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/main.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/menu.c" "CMakeFiles/cg-lab.dir/src/menu.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/menu.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/mouse.c" "CMakeFiles/cg-lab.dir/src/mouse.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/mouse.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.c" "CMakeFiles/cg-lab.dir/src/vertices.c.o" "gcc" "CMakeFiles/cg-lab.dir/src/vertices.c.o.d"
+  "/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes/transformacoes.c" "CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.o" "gcc" "CMakeFiles/cg-lab.dir/transformacoes/transformacoes.c.o.d"
   "" "cg-lab" "gcc" "CMakeFiles/cg-lab.dir/link.d"
   )
 
