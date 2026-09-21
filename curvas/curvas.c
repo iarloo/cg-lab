@@ -66,53 +66,62 @@ int calculaHermite(programa *poligono, pontoCurva *saida, int capacidade) {
   return capacidade;
 }
 
-int calculaBezier(programa *poligono, pontoCurva *saida, int capacidade) {
-  int n = poligono->numPontos;
-  if (n < 2 || capacidade < 2) return 0;
+int calculaBezier(programa *poligono, pontoCurva *saida, int capacidade){
 
-  double xs[n], ys[n];
-  int k = 0;
-  for (ponto *atual = poligono->inicio; atual != NULL; atual = atual->proximo) {
-    xs[k] = atual->x;
-    ys[k] = atual->y;
-    k++;
-  }
+    int n = poligono->numPontos;
+    if (n < 4 || capacidade < 2) return 0;
 
-  int pontosPorSegmento = capacidade / n;
-  if (pontosPorSegmento < 2) pontosPorSegmento = 2;
-
-  int pos = 0;
-  for (int seg = 0; seg < n; seg++) {
-    int i0     = seg;
-    int i1     = (seg + 1) % n;
-    int iAntes = (seg - 1 + n) % n;
-    int iDepois= (seg + 2) % n;
-
-    // Tangentes estilo Catmull-Rom
-    double t0x = (xs[i1]     - xs[iAntes])  / 2.0;
-    double t0y = (ys[i1]     - ys[iAntes])  / 2.0;
-    double t1x = (xs[iDepois] - xs[i0])     / 2.0;
-    double t1y = (ys[iDepois] - ys[i0])     / 2.0;
-
-    // Converte para pontos de controle Bézier:
-    // P0 = ponto atual
-    // P1 = P0 + t0/3
-    // P2 = P1 - t1/3
-    // P3 = próximo ponto
-    double b0x = xs[i0],           b0y = ys[i0];
-    double b1x = xs[i0] + t0x/3.0, b1y = ys[i0] + t0y/3.0;
-    double b2x = xs[i1] - t1x/3.0, b2y = ys[i1] - t1y/3.0;
-    double b3x = xs[i1],           b3y = ys[i1];
-
-    for (int j = 0; j < pontosPorSegmento && pos < capacidade; j++) {
-      double t = j / (double)(pontosPorSegmento - 1);
-      saida[pos].x = avaliaMatriz(t, M_BEZIER, b0x, b1x, b2x, b3x);
-      saida[pos].y = avaliaMatriz(t, M_BEZIER, b0y, b1y, b2y, b3y);
-      pos++;
+    double xs[n], ys[n];
+    int k = 0;
+    for (ponto *atual = poligono->inicio; atual != NULL; atual = atual->proximo) {
+      xs[k] = atual->x;
+      ys[k] = atual->y;
+      k++;
     }
-  }
 
-  return pos;
+    // Curva fechada: os segmentos avançam em passos de 3 e usam indices
+    // circulares (% n), de forma que o ultimo segmento sempre volta a
+    // se conectar ao ponto inicial (indice 0). Assume-se n multiplo de 3;
+    // se nao for, os (n % 3) pontos finais ficam fora de qualquer segmento.
+    int numSegmentos = n / 3;
+    if (numSegmentos < 1) return 0;
+
+    int pontosPorSegmento = capacidade / numSegmentos;
+    if (pontosPorSegmento < 2) pontosPorSegmento = 2;
+
+    int pos = 0;
+    for (int seg = 0; seg < numSegmentos; seg++) {
+      int base = seg * 3;
+
+      int i0 = base % n;
+      int i1 = (base + 1) % n;
+      int i2 = (base + 2) % n;
+      int i3 = (base + 3) % n;
+
+      double x0 = xs[i0];
+      double x1 = xs[i1];
+      double x2 = xs[i2];
+      double x3 = xs[i3];
+
+      double y0 = ys[i0];
+      double y1 = ys[i1];
+      double y2 = ys[i2];
+      double y3 = ys[i3];
+
+      // Pula o primeiro ponto dos segmentos seguintes para não duplicar
+      // a junção (o ponto [base] já foi o último do segmento anterior).
+      int jInicio = (seg == 0) ? 0 : 1;
+
+      for (int j = jInicio; j < pontosPorSegmento && pos < capacidade; j++) {
+        double t = j / (double)(pontosPorSegmento - 1);
+        saida[pos].x = avaliaMatriz(t, M_BEZIER, x0, x1, x2, x3);
+        saida[pos].y = avaliaMatriz(t, M_BEZIER, y0, y1, y2, y3);
+        pos++;
+      }
+
+    }
+
+    return pos;
 }
 
 int calculaBSpline(programa *poligono, pontoCurva *saida, int capacidade) {

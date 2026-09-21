@@ -360,7 +360,9 @@ CMakeFiles/cg-lab.dir/src/mouse.c.o: /home/iarlo/Documentos/Faculdade/6Periodo/C
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h
 
 CMakeFiles/cg-lab.dir/src/vertices.c.o: /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.c \
+  /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/globals.h \
   /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.h \
+  /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes/transformacoes.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
