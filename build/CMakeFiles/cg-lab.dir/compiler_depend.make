@@ -480,7 +480,6 @@ cg-lab: /lib/x86_64-linux-gnu/libGLX.so.0 \
   /lib/x86_64-linux-gnu/libXau.so.6 \
   /lib/x86_64-linux-gnu/libXdmcp.so.6 \
   /lib/x86_64-linux-gnu/libXext.so.6 \
-  /lib/x86_64-linux-gnu/libXi.so.6 \
   /lib/x86_64-linux-gnu/libXxf86vm.so.1 \
   /lib/x86_64-linux-gnu/libc.so.6 \
   /lib/x86_64-linux-gnu/libm.so.6 \
@@ -500,6 +499,7 @@ cg-lab: /lib/x86_64-linux-gnu/libGLX.so.0 \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
   /usr/lib/x86_64-linux-gnu/libGL.so \
   /usr/lib/x86_64-linux-gnu/libGLU.so \
+  /usr/lib/x86_64-linux-gnu/libXi.so \
   /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
   /usr/lib/x86_64-linux-gnu/libglut.so \
   CMakeFiles/cg-lab.dir/curvas/curvas.c.o \
@@ -541,6 +541,8 @@ cg-lab: /lib/x86_64-linux-gnu/libGLX.so.0 \
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/lib/x86_64-linux-gnu/libXi.so:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -745,8 +747,6 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o:
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
-
-/lib/x86_64-linux-gnu/libXi.so.6:
 
 /usr/lib/x86_64-linux-gnu/libGL.so:
 

@@ -2,6 +2,9 @@ CMakeFiles/cg-lab.dir/src/vertices.c.o: \
  /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.c \
  /usr/include/stdc-predef.h \
  /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.h \
+ /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/globals.h \
+ /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/transformacoes/transformacoes.h \
+ /home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/src/vertices.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

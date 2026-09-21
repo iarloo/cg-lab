@@ -212,6 +212,7 @@ cg-lab: /usr/lib/x86_64-linux-gnu/libGL.so
 cg-lab: /usr/lib/x86_64-linux-gnu/libGLU.so
 cg-lab: /usr/lib/x86_64-linux-gnu/libglut.so
 cg-lab: /usr/lib/x86_64-linux-gnu/libGL.so
+cg-lab: /usr/lib/x86_64-linux-gnu/libXi.so
 cg-lab: CMakeFiles/cg-lab.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/iarlo/Documentos/Faculdade/6Periodo/Computacao_Grafica/Trabalho_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable cg-lab"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cg-lab.dir/link.txt --verbose=$(VERBOSE)
