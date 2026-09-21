@@ -84,10 +84,14 @@ int calculaBezier(programa *poligono, pontoCurva *saida, int capacidade){
     // se conectar ao ponto inicial (indice 0). Assume-se n multiplo de 3;
     // se nao for, os (n % 3) pontos finais ficam fora de qualquer segmento.
     int numSegmentos = n / 3;
-    if (numSegmentos < 1) return 0;
+    if (numSegmentos < 1){
+       return 0 ;
+    }
 
     int pontosPorSegmento = capacidade / numSegmentos;
-    if (pontosPorSegmento < 2) pontosPorSegmento = 2;
+    if (pontosPorSegmento < 2){
+        pontosPorSegmento = 2;
+    }
 
     int pos = 0;
     for (int seg = 0; seg < numSegmentos; seg++) {
