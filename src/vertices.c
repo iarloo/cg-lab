@@ -1,4 +1,6 @@
 #include "vertices.h"
+#include "globals.h"
+#include "transformacoes.h"
 #include <stdio.h>
 #include <stdlib.h>
 programa *inicializa_lista() {
@@ -35,6 +37,7 @@ void novo_ponto(int x, int y, programa *poligono) {
   novo_ponto->anguloCentro = 0;
   novo_ponto->proximo = NULL;
   novo_ponto->anterior = NULL;
+
   if (poligono->numPontos == 0) {
     poligono->inicio = novo_ponto;
   } else {
@@ -43,8 +46,42 @@ void novo_ponto(int x, int y, programa *poligono) {
   }
 
   poligono->ultimo = novo_ponto;
-
   poligono->numPontos++;
+
+  if(poligono->numPontos >= 3){
+      setAngulos(poligono);
+
+      int trocou = 1;
+      while(trocou){
+          trocou = 0;
+          for(ponto *atual = poligono->inicio; atual != NULL && atual->proximo; atual = atual->proximo){
+              if(atual->anguloCentro > atual->proximo->anguloCentro){
+                  int tx = atual->x;
+                  atual->x = atual->proximo->x;
+                  atual->proximo->x = tx;
+
+                  int ty = atual->y;
+                            atual->y = atual->proximo->y;
+                            atual->proximo->y = ty;
+
+                double ta = atual->anguloCentro;
+                atual->anguloCentro = atual->proximo->anguloCentro;
+                atual->proximo->anguloCentro = ta;
+
+                double tr = atual->raioCentro;
+                atual->raioCentro = atual->proximo->raioCentro;
+                atual->proximo->raioCentro = tr;
+
+                  trocou = 1;
+
+              }
+          }
+      }
+
+
+
+  }
+
 }
 
 void apaga_ponto(programa *poligono) {
@@ -57,8 +94,11 @@ void apaga_ponto(programa *poligono) {
     free(atual);
 
   } else {
-    poligono->inicio = atual->proximo;
-    free(atual);
+      poligono->inicio = atual->proximo;
+      if (poligono->inicio != NULL) {
+          poligono->inicio->anterior = NULL;
+      }
+      free(atual);
   }
 
   if (poligono->numPontos != 0) {
